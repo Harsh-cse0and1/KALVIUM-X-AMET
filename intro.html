@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalvium x AMET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Kalvium X AMET</h1>
+    <p>Empowering innovation and learning for a better future.</p>
+    <a href="index.html" class="cta-button">Discover</a>
+    <style>
+        .cta-button{
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ea1b1b, #1a1a1a, #262626, #7d2323);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            overflow: hidden;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: red;
+            text-shadow: 0 0 10px red, 0 0 20px red;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px red, 0 0 20px red; }
+            to { text-shadow: 0 0 15px red, 0 0 30px red; }
+        }
+
+        p {
+            font-size: 1.2em;
+            opacity: 0.8;
+            margin-top: -10px;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border: 2px solid red;
+            color: red;
+            background: transparent;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.8s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: red;
+            color: black;
+            box-shadow: 0 0 15px red;
+        }
+
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+    </style>
+
+</body>
+</html>
